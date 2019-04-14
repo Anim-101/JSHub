@@ -111,7 +111,7 @@ class LocalStorage {
 
         books.forEach(function(book) {
 
-            const ui = new UI;
+            const ui = new UI();
 
             //Adding Books to UI
             ui.addBookToList(book);
@@ -136,7 +136,7 @@ class LocalStorage {
         books.forEach(function(book, index) {
 
             if(book.isbn === isbn) {
-                books.splice(index, 1)
+                books.splice(index, 1);
             }
         });
 
@@ -188,7 +188,7 @@ document.getElementById('book-form').addEventListener('submit', function(e) {
 //Event Listener for Deleting Books
 document.getElementById('book-list').addEventListener('click', function(e){
 
-    //Instantiation UI
+    //Instantiating UI
     const ui = new UI();
 
     //Deleting Books
