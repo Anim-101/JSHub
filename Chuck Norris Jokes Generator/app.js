@@ -5,8 +5,6 @@ document.querySelector('.get-jokes').addEventListener('click', getJokes);
 function getJokes(e){
     const number = document.querySelector('#jokes-number').value;
 
-    console.log(number);
-
     //Checking Number for Empty or Negative Input, Otherwise Generate Jokes
     if(number < 1){
         console.log(number);
